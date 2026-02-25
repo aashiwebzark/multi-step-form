@@ -1,0 +1,26 @@
+/* MultiStepForm.css */
+
+.step-indicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.step {
+  flex: 1 1 100px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #e5e7eb; /* light gray */
+  font-weight: bold;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.step.active {
+  background-color: #2563eb; /* blue */
+  color: white;
+  border-bottom: 3px solid #1d4ed8;
+}
